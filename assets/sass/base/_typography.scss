@@ -1,0 +1,29 @@
+/* Tipografias */
+$xxx-large: 70px;
+$xx-large: 40px;
+$x-large: 30px;
+$large: 18px;
+$medium: 16px;
+$small: 12px;
+$x-small: 10px;
+
+$roboto: 'Roboto', sans-serif;
+$ptmono: 'PT Mono', monospace;
+
+// Variables
+$primary-color: white;
+$title-size: 20px;
+$subtitle-weight: 400;
+
+ 
+// mixins
+@mixin ptmono-regular {
+    font-family: $ptmono;
+    font-weight: 400
+ }
+ 
+ @mixin roboto-light {
+    font-family: $roboto;
+    font-weight: 300
+ }
+
