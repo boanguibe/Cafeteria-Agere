@@ -1,9 +1,12 @@
 
-.botton-primary {	
-    background-color: $white;
-    color: $quiter-silver;
+.button {
     padding: 1rem 1rem;
     border-radius: 1px;
+}
+
+.button-primary {	
+    background-color: $white;
+    color: $quiter-silver;
     border: 1px solid $quiter-silver;
     font-weight: 700;
     @include ptmono-regular;
@@ -12,11 +15,9 @@
         color: $black;
     }
 }
-.botton-secundary {
+.button-secundary {
     background-color: $shiny-shamrock;
     color: $white;
-    padding: 1rem 1rem;
-    border-radius: 1px;
     border: 1px solid  $shiny-shamrock;
     font-weight: 700;
     @include ptmono-regular;

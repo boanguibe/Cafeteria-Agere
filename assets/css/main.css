@@ -14,31 +14,32 @@ h2 {
   font-weight: 400;
 }
 
-.botton-primary {
-  background-color: #fff;
-  color: #A2A2A2;
+.button {
   padding: 1rem 1rem;
   border-radius: 1px;
+}
+
+.button-primary {
+  background-color: #fff;
+  color: #A2A2A2;
   border: 1px solid #A2A2A2;
   font-weight: 700;
   font-family: "PT Mono", monospace;
   font-weight: 400;
 }
-.botton-primary:hover {
+.button-primary:hover {
   color: #000;
 }
 
-.botton-secundary {
+.button-secundary {
   background-color: #4CA866;
   color: #fff;
-  padding: 1rem 1rem;
-  border-radius: 1px;
   border: 1px solid #4CA866;
   font-weight: 700;
   font-family: "PT Mono", monospace;
   font-weight: 400;
 }
-.botton-secundary:hover {
+.button-secundary:hover {
   color: #000;
   background-color: #9Dcfab;
 }/*# sourceMappingURL=main.css.map */
