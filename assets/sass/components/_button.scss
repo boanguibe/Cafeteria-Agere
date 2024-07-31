@@ -2,7 +2,7 @@
     padding: 1rem 1rem;
     border-radius: 1px;
     font-weight: 700;
-    @include ptmono-regular;
+    font-family: $ptmono;
 
     &--primary {
         background-color: $white;
