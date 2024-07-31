@@ -1,0 +1,28 @@
+
+ 
+h1{
+    color: $blue-de-fracia;
+    @include roboto-light;
+}
+
+ h2  {
+     @include ptmono-regular;
+ }
+
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid $quiter-silver;
+ }
+
+ .navbar__link {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+ }
+
+ .navbar__link--state {
+    @include ptmono-regular;
+}

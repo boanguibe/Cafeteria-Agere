@@ -1,29 +1,31 @@
-
 .button {
     padding: 1rem 1rem;
     border-radius: 1px;
-}
-
-.button-primary {	
-    background-color: $white;
-    color: $quiter-silver;
-    border: 1px solid $quiter-silver;
     font-weight: 700;
     @include ptmono-regular;
 
-    &:hover {
-        color: $black;
-    }
-}
-.button-secundary {
-    background-color: $shiny-shamrock;
-    color: $white;
-    border: 1px solid  $shiny-shamrock;
-    font-weight: 700;
-    @include ptmono-regular;
+    &--primary {
+        background-color: $white;
+        color: $quiter-silver;
+        border: 1px solid $quiter-silver;
 
-    &:hover {
-        color: $black;
-        background-color: $tourquoise-green;
+        &:hover {
+            color: $black;
+        }
     }
+
+    &--secundary {
+        background-color: $shiny-shamrock;
+        color: $white;
+        border: 1px solid $shiny-shamrock;
+    
+    
+        &:hover {
+            color: $black;
+            background-color: $tourquoise-green;
+        }
+    }
+
 }
+
+
