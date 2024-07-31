@@ -4,8 +4,10 @@
 @import "vendors/fonts-google";
 // Base
 @import "base/typography";
+@import "base/base";
 // Layout
 @import "layout/navbar";
+@import "layout/header";
 // Components
 @import "components/button";
 @import "components/link";

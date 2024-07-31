@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+
+    &__img {
+        width: 72%;
+
+        &--banner {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        width: 28%;
+        padding: 3rem 0 0 3rem;
+       
+
+        &--title {
+            font-size: calc(2.2rem + 2vw); // tamaño de fuente ajustable basado en el viewport
+            max-width: 100%; // asegúrate de que el texto no se desborde del contenedor
+            font-weight: bold;
+        }
+
+        &--subtitle {
+            font-size: calc(0.4rem + 1vw); // tamaño de fuente ajustable basado en el viewport
+            max-width: 100%; // asegúrate de que el texto no se desborde del contenedor
+            color: $quiter-silver;
+            font-weight: bold;
+        }
+    }
+}
