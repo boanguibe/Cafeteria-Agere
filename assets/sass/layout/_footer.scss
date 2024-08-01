@@ -4,20 +4,18 @@
     /* Permite que los elementos se ajusten en varias filas si es necesario */
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0rem 2rem;
     width: 65%;
     /* Ajusta el ancho máximo */
 
     &__info {
         width: 40%;
         padding: 0 1rem;
-        background-color: yellow;
+  
     }
 
     &__imagen {
         width: 50%;
-        /* Ajusta el contenedor al 50% del ancho de su padre */
-        background-color: yellowgreen;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -33,18 +31,18 @@
         }
 
         &--medium {
-            flex: 1 1 20%;
+            flex: 1 1 50%;
             position: absolute;
             /* Posiciona la imagen de forma absoluta */
             top: 0;
             /* Alinea la imagen en la parte superior del contenedor */
-            left: 50%;
+            left: 100%;
             /* Mueve la imagen al centro horizontal del contenedor */
             transform: translateX(-50%);
             /* Centra la imagen horizontalmente */
-            height: 30%;
+            height: 70%;
             /* Ajusta la altura de la imagen */
-            width: auto;
+            width: 20%;
             /* Permite que la imagen mantenga su proporción */
         }
 
@@ -52,4 +50,19 @@
             flex: 1 1 30%;
         }
     }
+}
+
+.info-title {
+    color: $black;
+    font-size: $x-large;
+    font-weight: bold;
+    font-family: $ptmono;
+    margin-bottom: 1.6rem;
+}
+
+.info-subtitle {
+    color: $quiter-silver;
+    font-size: $medium;
+    font-weight: bold;
+    font-family: $roboto;
 }

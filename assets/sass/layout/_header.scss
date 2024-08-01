@@ -2,20 +2,44 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     max-width: 100%;
-    /* Ajusta el ancho máximo */
 
-    &__img {
+    &__banner {
+        display: flex;
+        justify-content: flex-end; // Alinea al final horizontalmente
+        align-items: flex-end; // Alinea al final verticalmente
         width: 72%;
+        background-image: url("../img/img-1.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto; // Ajusta el ancho y permite que la altura sea automática
+        height: 65vh; // Altura relativa al viewport
+        
+        &--container {
+            display: flex;
+            padding: 1rem;
+            flex-direction: row;
+            align-items: flex-end;
+            width: 50%; // Ocupa la mitad del contenedor padre
+            background-color: white; // Añade un fondo para visibilidad
+        }
 
-        &--banner {
-            width: 100%;
+        &-box {
+            width: 33%;
+            margin: 0 10px; // Espacio entre las cajas
+            padding: 10px; // Añade padding para que el texto no esté pegado a los bordes
+            font-family: $ptmono;
+            font-size: calc(0.5rem + 1vw); // Tamaño de fuente ajustable basado en el viewport
+            color: white; // Asegúrate de que el texto sea visible
         }
     }
 
+
+
     &__text {
         width: 28%;
-        padding: 3rem 0 0 3rem;
+        padding: 1rem 0 0 3rem;
+        margin-top: -2rem;
 
 
         &--title {
@@ -31,4 +55,10 @@
             font-weight: bold;
         }
     }
+}
+
+.box-span {
+    color: $quiter-silver;
+    font-size: $small;
+    font-weight: bold;
 }

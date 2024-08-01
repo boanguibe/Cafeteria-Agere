@@ -10,6 +10,7 @@ body {
   overflow-x: hidden; /* Evita el scroll horizontal */
   margin: 0 auto;
   padding: 0;
+  width: 90%;
 }
 
 h1, h2, h3, span {
@@ -42,18 +43,39 @@ h1, h2, h3, span {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   max-width: 100%;
-  /* Ajusta el ancho máximo */
 }
-.header__img {
+.header__banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   width: 72%;
+  background-image: url("../img/img-1.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 65vh;
 }
-.header__img--banner {
-  width: 100%;
+.header__banner--container {
+  display: flex;
+  padding: 1rem;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 50%;
+  background-color: white;
+}
+.header__banner-box {
+  width: 33%;
+  margin: 0 10px;
+  padding: 10px;
+  font-family: "PT Mono", monospace;
+  font-size: calc(0.5rem + 1vw);
+  color: white;
 }
 .header__text {
   width: 28%;
-  padding: 3rem 0 0 3rem;
+  padding: 1rem 0 0 3rem;
+  margin-top: -2rem;
 }
 .header__text--title {
   font-size: calc(2.2rem + 2vw);
@@ -67,25 +89,28 @@ h1, h2, h3, span {
   font-weight: bold;
 }
 
+.box-span {
+  color: #A2A2A2;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .footer {
   display: flex;
   /*  flex-wrap: wrap; */
   /* Permite que los elementos se ajusten en varias filas si es necesario */
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
   width: 65%;
   /* Ajusta el ancho máximo */
 }
 .footer__info {
   width: 40%;
   padding: 0 1rem;
-  background-color: yellow;
 }
 .footer__imagen {
   width: 50%;
-  /* Ajusta el contenedor al 50% del ancho de su padre */
-  background-color: yellowgreen;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -99,22 +124,37 @@ h1, h2, h3, span {
   flex: 1 1 20%;
 }
 .footer__imagen--medium {
-  flex: 1 1 20%;
+  flex: 1 1 50%;
   position: absolute;
   /* Posiciona la imagen de forma absoluta */
   top: 0;
   /* Alinea la imagen en la parte superior del contenedor */
-  left: 50%;
+  left: 100%;
   /* Mueve la imagen al centro horizontal del contenedor */
   transform: translateX(-50%);
   /* Centra la imagen horizontalmente */
-  height: 30%;
+  height: 70%;
   /* Ajusta la altura de la imagen */
-  width: auto;
+  width: 20%;
   /* Permite que la imagen mantenga su proporción */
 }
 .footer__imagen--large {
   flex: 1 1 30%;
+}
+
+.info-title {
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "PT Mono", monospace;
+  margin-bottom: 1.6rem;
+}
+
+.info-subtitle {
+  color: #A2A2A2;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
 }
 
 .button {
