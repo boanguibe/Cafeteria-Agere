@@ -1,6 +1,6 @@
 .footer {
     display: flex;
-   /*  flex-wrap: wrap; */
+    /*  flex-wrap: wrap; */
     /* Permite que los elementos se ajusten en varias filas si es necesario */
     justify-content: space-between;
     align-items: center;
@@ -11,7 +11,7 @@
     &__info {
         width: 40%;
         padding: 0 1rem;
-  
+
     }
 
     &__imagen {
@@ -19,18 +19,26 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        position: relative; /* Necesario para el posicionamiento absoluto de las imágenes hijas */
+        position: relative;
+        /* Necesario para el posicionamiento absoluto de las imágenes hijas */
+        background-color: $blue-de-fracia;
 
         &--banner {
             width: 100%;
             height: auto;
         }
 
-        &--small {
+        &--uno {
             flex: 1 1 20%; // Ajusta la flexibilidad y el tamaño relativo de la imagen
+            position: relative;
+            /* Permite el desplazamiento relativo */
+            top: 10px;
+            /* Desplaza 10px hacia abajo */
+            left: -50px;
+            /* Desplaza 10px hacia la izquierda */
         }
 
-        &--medium {
+        &--dos {
             flex: 1 1 50%;
             position: absolute;
             /* Posiciona la imagen de forma absoluta */
@@ -46,8 +54,9 @@
             /* Permite que la imagen mantenga su proporción */
         }
 
-        &--large {
+        &--tres {
             flex: 1 1 30%;
+
         }
     }
 }

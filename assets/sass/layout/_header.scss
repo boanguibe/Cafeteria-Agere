@@ -55,6 +55,37 @@
             font-weight: bold;
         }
     }
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    
+
+        &-uno {
+            
+            background-color: $coral;
+            width: 100px;
+            height: 100px;
+        }
+
+        &-dos {
+            background-color: $flame;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            align-content: center;
+            color:$white;
+            font-size: $xxx-large;
+
+            position: relative;
+            /* Permite el desplazamiento relativo */
+            top: -10px;
+            /* Desplaza 10px hacia abajo */
+            left: -110px;
+        }
+    }
+
 }
 
 .box-span {

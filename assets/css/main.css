@@ -88,6 +88,30 @@ h1, h2, h3, span {
   color: #A2A2A2;
   font-weight: bold;
 }
+.header__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.header__box-uno {
+  background-color: #e2d820;
+  width: 100px;
+  height: 100px;
+}
+.header__box-dos {
+  background-color: #E4572E;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  align-content: center;
+  color: #fff;
+  font-size: 70px;
+  position: relative;
+  /* Permite el desplazamiento relativo */
+  top: -10px;
+  /* Desplaza 10px hacia abajo */
+  left: -110px;
+}
 
 .box-span {
   color: #A2A2A2;
@@ -114,16 +138,24 @@ h1, h2, h3, span {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: relative; /* Necesario para el posicionamiento absoluto de las imágenes hijas */
+  position: relative;
+  /* Necesario para el posicionamiento absoluto de las imágenes hijas */
+  background-color: #3C91E6;
 }
 .footer__imagen--banner {
   width: 100%;
   height: auto;
 }
-.footer__imagen--small {
+.footer__imagen--uno {
   flex: 1 1 20%;
+  position: relative;
+  /* Permite el desplazamiento relativo */
+  top: 10px;
+  /* Desplaza 10px hacia abajo */
+  left: -50px;
+  /* Desplaza 10px hacia la izquierda */
 }
-.footer__imagen--medium {
+.footer__imagen--dos {
   flex: 1 1 50%;
   position: absolute;
   /* Posiciona la imagen de forma absoluta */
@@ -138,7 +170,7 @@ h1, h2, h3, span {
   width: 20%;
   /* Permite que la imagen mantenga su proporción */
 }
-.footer__imagen--large {
+.footer__imagen--tres {
   flex: 1 1 30%;
 }
 
