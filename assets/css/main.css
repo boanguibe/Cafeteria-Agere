@@ -92,6 +92,8 @@ h1, h2, h3, span {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-left: -4rem;
+  margin-top: 5rem;
 }
 .header__box-uno {
   background-color: #e2d820;
